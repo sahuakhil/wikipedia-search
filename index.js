@@ -1,21 +1,33 @@
-let count = 10;
-let entervalEl = setInterval(function() {
-    count = count - 1;
-    timecountEl.textContent = count;
-    if (count === 0) {
-        timecountEl.textContent = "BOOM!!";
-        clearInterval(entervalEl);
-    }
+let stopLightElement = document.getElementById("stopLight");
+let readyLightElement = document.getElementById("readyLight");
+let goLightElement = document.getElementById("goLight");
+let stopButtonElement = document.getElementById("stopButton");
+let readyButtonElement = document.getElementById("readyButton");
+let goButtonElement = document.getElementById("goButton");
 
-}, 1000);
+function turnOnRed() {
+    stopLightElement.style.backgroundColor = "#cf1124";
+    readyLightElement.style.backgroundColor = "#4b5069";
+    goLightElement.style.backgroundColor = "#4b5069";
+    stopButtonElement.style.backgroundColor = "#cf1124";
+    readyButtonElement.style.backgroundColor = "#1f1d41";
+    goButtonElement.style.backgroundColor = "#1f1d41";
+}
 
-let timecountEl = document.getElementById("timeCount");
-let defuserEl = document.getElementById("defuser");
+function turnOnYellow() {
+    stopLightElement.style.backgroundColor = "#4b5069";
+    readyLightElement.style.backgroundColor = "#f7c948";
+    goLightElement.style.backgroundColor = "#4b5069";
+    stopButtonElement.style.backgroundColor = "#1f1d41";
+    readyButtonElement.style.backgroundColor = "#f7c948";
+    goButtonElement.style.backgroundColor = "#1f1d41";
+}
 
-defuserEl.addEventListener("keydown", function(event) {
-    let bomb = defuserEl.value;
-    if (event.key === "Enter" && bomb === "defuse" && count !== 0) {
-        timecountEl.textContent = "You Did IT !!!";
-        clearInterval(entervalEl);
-    }
-});
+function turnOnGreen() {
+    stopLightElement.style.backgroundColor = "#4b5069";
+    readyLightElement.style.backgroundColor = "#4b5069";
+    goLightElement.style.backgroundColor = "#199473";
+    stopButtonElement.style.backgroundColor = "#1f1d41";
+    readyButtonElement.style.backgroundColor = "#1f1d41";
+    goButtonElement.style.backgroundColor = "#199473";
+}
