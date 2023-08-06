@@ -1,124 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
-.bg-container {
-    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ocean.jpg");
-    height: 100vh;
-    background-size: cover;
+.main-container {
+    font-family: "Roboto";
+    background-color: black;
+
 }
 
-.ah-center {
-    text-align: center;
+.wiki-search-header {
     font-style: italic;
-    font-size: 25px;
+    text-decoration: underline;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5cdcd;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    background-image: url("https://www.shutterstock.com/image-photo/woman-use-laptop-smartphone-iot-260nw-594171068.jpg");
 }
 
-.tourism-card {
-    text-align: center;
-    background-color: white;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    padding: 5px;
+.wiki-logo {
+    width: 135px;
+    margin-bottom: 30px;
+    color: blue;
 }
 
-.button {
-    color: white;
-    background-color: #25b1cc;
-    width: 138px;
-    height: 36px;
-    border-width: 0px;
-    border-radius: 20px;
+.search-input {
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5cdcd;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.main-heading {
-    font-family: "Roboto";
+.search-results {
+    width: 100%;
+    padding-left: 20px;
+    color: black;
 }
 
-.paragraph {
-    font-family: "Roboto";
+.result-item {
+    margin-bottom: 20px;
 }
 
-.favourite-places-bg-container {
-    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
-    height: 106vh;
-    background-size: cover;
-    padding: 24px;
+.result-title {
+    font-size: 22px;
 }
 
-.favourite-places-heading {
-    color: white;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: bold;
+.link-description {
+    color: #444444;
+    font-size: 15px;
 }
 
-.favourite-place-card-container {
-    background-color: white;
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 15px;
-}
-
-.favourite-place-card-heading {
-    color: #0f0e46;
-    font-family: "Roboto";
-    font-size: 23px;
-    font-weight: bold;
-}
-
-.favourite-place-card-description {
-    color: #6c6b70;
-    font-family: "Roboto";
-    font-size: 13px;
-}
-
-.favourite-place-card-image {
-    width: 80px;
-    height: 100px;
-}
-
-.favourite-place-card-text-container {
-    margin-right: 15px;
-}
-
-.detailed-view-bg-container {
-    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/seabg.png");
-    height: 100vh;
-    background-size: cover;
-}
-
-.detailed-view-heading {
-    color: white;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: bold;
-    padding: 24px;
-}
-
-.detailed-view-card-container {
-    background-color: white;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    margin: 24px;
-}
-
-.detailed-view-card-heading {
-    color: #0f0e46;
-    font-family: "Roboto";
-    font-size: 23px;
-    font-weight: bold;
-}
-
-.detailed-view-card-description {
-    color: #6c6b70;
-    font-family: "Roboto";
-    font-size: 13px;
-}
-
-.detailed-view-card-text-container {
-    padding: 16px;
-}
-
-.btn-dark {
-
-    width: 15vh;
+.result-url {
+    color: #006621;
+    text-decoration: none;
 }
